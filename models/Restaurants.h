@@ -22,7 +22,7 @@ public:
     }
 
     ~Restaurant(){
-        cout << "Destroying Restaurant: " << name << ", ans clearing its menu." << endl;
+        cout << "Destroying Restaurant: " << name << ", and clearing its menu." << endl;
         menu.clear();
     }
 
