@@ -8,9 +8,22 @@
 using namespace std;
 
 class PickupOrder : public Order{
+private:
+    string restaurantAddress;
 public:
+    PickupOrder(){
+        restaurantAddress = "";
+    }
     string getType() const override{
-        return "Pickup order\n";
+        return "Pickup\n";
+    }
+
+    string getRestaurantAddress() const{
+        return restaurantAddress;
+    }
+
+    void setRestaurantAddress(const string& addr){
+        restaurantAddress = addr;
     }
 };
 

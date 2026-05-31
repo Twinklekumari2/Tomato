@@ -79,7 +79,7 @@ public:
         return items;
     }
      
-    void paymentStrategy(PaymentStrategy* p){
+    void setPaymentStrategy(PaymentStrategy* p){
         paymentStrategy = p;
     }
 

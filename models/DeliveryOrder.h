@@ -8,10 +8,23 @@
 using namespace std;
 
 class DeliveryOrder : public Order{
+private: 
+    string userAddress;
 public:
-    string getType() const override{
-        return "Delivery order\n";
+    DeliveryOrder(){
+        userAddress = "";
     }
+    string getType() const override{
+        return "Delivery";
+    }
+
+    void setUserAddress(const string& addr){
+        userAddress = addr;
+    }
+
+    string getUserAddress() const{
+        return userAddress;
+    }   
 };
 
 #endif // !DELIVERY_ORDER_H
